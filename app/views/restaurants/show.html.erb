@@ -1,0 +1,19 @@
+<div class='text-center'>
+<hr>
+  <h4><%= @restaurant.name %></h4>
+  <h6><%= @restaurant.address %></h6>
+  <h6><%= @restaurant.category %></h6>
+  <%= link_to "edit", edit_restaurant_path %>
+</div>
+
+<hr>
+<div class="text-center">
+<%= link_to "add a review", new_restaurant_review_path(@restaurant) %>
+</div>
+
+
+<hr>
+
+<div class="text-center">
+  <%= link_to "home", restaurants_path %>
+</div>

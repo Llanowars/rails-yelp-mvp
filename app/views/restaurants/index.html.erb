@@ -1,0 +1,23 @@
+<div class='text-center'>
+  <h3>Our Restaurants</h3>
+  <% @restaurants.each do |restaurant| %>
+  <hr>
+  <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <li><%= link_to "delete", restaurant_path(restaurant),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+  </li>
+  <% end %>
+</div>
+
+<hr>
+
+<div class="text-center">
+  <%= link_to "create", new_restaurant_path %>
+</div>
+
+
+
+
+
+
