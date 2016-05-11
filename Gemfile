@@ -45,3 +45,6 @@ group :development do
   gem 'spring'
 end
 
+gem 'rspec-rails', group: [ :test ]
+gem 'better_errors', group: [ :test ]
+gem 'binding_of_caller', group: [ :test ]
