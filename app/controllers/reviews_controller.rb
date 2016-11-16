@@ -1,4 +1,4 @@
-class ReviewsController < ApplicationController
+ class ReviewsController < ApplicationController
 
   before_action :find_restaurant, only: [ :new, :create ]
 
