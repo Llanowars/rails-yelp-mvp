@@ -1,19 +1,20 @@
 <div class='text-center'>
-  <h3>Our Restaurants</h3>
+  <h1>Our Restaurants</h1>
   <% @restaurants.each do |restaurant| %>
-  <hr>
-  <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
-  <li><%= link_to "delete", restaurant_path(restaurant),
-      method: :delete,
-      data: { confirm: "Are you sure?" } %>
-  </li>
+    <hr>
+    <h3><%= link_to restaurant.name, restaurant_path(restaurant), class: "btn btn-success" %></h3>
+    <h6><%= link_to "delete", restaurant_path(restaurant),
+        method: :delete,
+        data: { confirm: "Are you sure?" }, 
+        class: "btn btn-danger" %>
+    </h6>
   <% end %>
 </div>
 
 <hr>
 
 <div class="text-center">
-  <%= link_to "create", new_restaurant_path %>
+  <%= link_to "create", new_restaurant_path, class: "btn btn-primary" %>
 </div>
 
 

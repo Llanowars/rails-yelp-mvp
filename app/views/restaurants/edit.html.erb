@@ -1,12 +1,14 @@
-<div class="text-center" >
-  <%= simple_form_for @restaurant do |f| %>
-  <%= f.input :name %>
-  <%= f.input :address %>
-  <%= f.input :category %>
-  <%= f.button :submit %>
-  <% end %>
-</div>
+<div class="container">
+  <div class="text-center" >
+    <%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :category %>
+    <%= f.button :submit %>
+    <% end %>
+  </div>
 
-<div class="text-center">
-  <%= link_to "home", restaurants_path %>
-</div
+  <div class="text-center">
+    <%= link_to "home", restaurants_path %>
+  </div>
+</div>
